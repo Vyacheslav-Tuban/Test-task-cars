@@ -1,0 +1,388 @@
+body{	
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*Шапка сайта*/
+header>.headerImg{
+	width: 100%;
+	height: 300px;
+	background-image: url(img/header.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	/*grid-template-rows: repeat(1, 1fr);*/
+	align-items: end;
+}
+header>.headerImg>div{
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	background-color: rgba(255, 255, 255, 0.67);
+}
+.textHeader{
+	grid-column: 1/9;
+	font-size: 14px;
+	padding: 8px 5px;
+	margin: 0;
+}
+.textHeader>span{
+	color: #860019;
+	font-weight: bold;
+}
+.buttonHeader{
+	grid-column: 9/10;
+	background-color: #8d0b13;
+	border: solid 1.5px #5e2120;
+	font-size: 10px;
+	outline: none;
+	margin: 11px 10px;
+	cursor: pointer;
+}
+.buttonHeader:hover{
+	background-color: #570909;
+}
+.buttonHeader>a{
+	text-decoration: none;
+	color: white;
+}
+
+.blackRow{
+	height: 15px;
+	background-color: black;
+}
+
+/*Основная часть*/
+main{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 22px;
+}
+section{
+	grid-column: 1/5;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+.artImg1{
+	background-image: url(img/img1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.artImg2{
+	background-image: url(img/img2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.artImg3{
+	background-image: url(img/img3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.artHead1>p:nth-child(1), .artHead2>p:nth-child(1), .artHead3>p:nth-child(1){
+	color: #84110c;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 18px 0 0 0; 
+}
+.artHead1>p:nth-child(2), .artHead2>p:nth-child(2), .artHead3>p:nth-child(2){
+	margin: 0 0 14px 0;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.artMain1, .artMain2, .artMain3{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 10px;
+}
+.artImg1, .artImg2, .artImg3{
+	grid-column: 1/3;
+	height: 22vh;
+}
+.artArticle1, .artArticle2, .artArticle3{
+	grid-column: 3/6;
+	font-size: 15px;
+	text-align: justify;
+	margin: 0; 
+}
+
+.artFooter1, .artFooter2, .artFooter3{
+	margin-top: 10px;
+	background-color: #8a0e10;
+	display: grid;
+	grid-template-columns: repeat(15, auto);
+	padding: 3px 0;
+}
+.artFooter1>div>a, .artFooter2>div>a, .artFooter3>div>a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+.artFooter1>div:nth-child(3), .artFooter2>div:nth-child(3), .artFooter3>div:nth-child(3){
+	color: white;
+	font-size: 14px;
+}
+.artFooter1>div:nth-child(1), .artFooter2>div:nth-child(1), .artFooter3>div:nth-child(1){
+	justify-self: center;
+}
+
+/*Боковая панель*/
+aside{
+	padding: 18px 5px 0 15px;
+	grid-column: 5/7;
+	background-color: #e9decc;
+}
+.login{
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 5px;
+}
+.login>p{
+	grid-column: 1/4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	color: #810912;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+.login>form{
+	grid-column: 1/2;
+}
+.login>div{
+	grid-column: 2/4;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	margin: 15px 0 0 25px;
+}
+.login>div>a{
+	text-decoration: none;
+	color: #601a1c;
+	padding-bottom: 10px; 
+	font-size: 14px;
+}
+.login>div>a:hover{
+	color: #2e0202;
+}
+.login>div>button{
+	color: white;
+	background-color: #8d0b13;
+	border: solid 1.5px #5e2120;
+	font-size: 13px;
+	outline: none;
+	margin: 0;
+	width: 5vw;
+	cursor: pointer;
+}
+.login>div>button:hover{
+	background-color: #570909;
+}
+
+label{
+	font-size: 14px;
+	font-weight: bold;
+}
+input{
+	border: none;
+	width: 100%;
+	height: 3vh;
+	width: 15vh;
+	outline: none;
+}
+
+.nav{
+	margin-top: 40px; 
+}
+.nav>p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #601a1c;
+}
+ul{
+	padding: 0 0 0 15px;
+}
+li>a{
+	text-decoration: none;
+	color: #601a1c;
+	font-size: 14px;
+
+}
+li>a:hover{
+	color: #2e0202;
+}
+
+
+
+@media (max-width: 1128px) {
+	body{
+		width: 90%;
+	}
+	header>.headerImg>div{
+	grid-template-columns: repeat(7, 1fr);
+
+}
+.blackRow{
+	height: 10px;
+}
+.textHeader{
+	grid-column: 1/7;
+}
+.buttonHeader{
+	grid-column: 7/8;
+}
+	.login{
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(1, 1fr);
+	grid-row-gap: 5px;
+}
+.login>p{
+	grid-column: 1/2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.login>form{
+	grid-column: 1/2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-template-columns: repeat(1, 1fr);
+}
+.usernameLab{
+	grid-column: 1/2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.usernameInp{
+	grid-column: 1/2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.passwordLab{
+	grid-column: 1/2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+.passwordInp{
+	grid-column: 1/2;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.login>div{
+	grid-column: 1/2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	margin: 0;
+	padding: 0;
+}
+.login>div>a{
+	padding: 0;
+}
+.login>div>button{
+	margin-top: 10px; 
+	width: 10vh;
+}
+input{
+	width: 20vh;
+}
+}
+
+
+
+@media (max-width: 799px){
+	body{
+		width: 95%;
+	}
+}
+
+
+
+@media (max-width: 850px){
+	main{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, auto);
+}
+section{
+	grid-column: 1/2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+aside{
+	margin-top: 10px;
+	grid-column: 1/2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 80px;
+	/*justify-items : center;*/
+}
+
+.login{
+	grid-column: 1/2;
+	justify-self: end;
+	padding-bottom: 10px; 
+}
+.nav{
+	grid-column: 2/3;
+	margin: 0;
+	justify-self: start;
+}
+.nav>p{
+	margin: 0 0 5px 0;
+}
+.nav>ul{
+	margin-top: 5px; 
+}
+}
+
+
+
+
+@media (max-width: 758px){
+	body{
+		width: 99%;
+	}
+	header>.headerImg>div{
+	grid-template-columns: repeat(5, 1fr);
+
+}
+.textHeader{
+	grid-column: 1/5;
+}
+.buttonHeader{
+	grid-column: 5/6;
+	margin: 20px 20px;
+}
+
+.artImg1, .artImg2, .artImg3{
+	height: 18vh;
+}
+.artArticle1, .artArticle2, .artArticle3{
+	font-size: 14px;
+}
+}
+
+
+
+
+@media (max-width: 547px) {
+	header>.headerImg>div{
+	grid-template-columns: repeat(4, 1fr);
+}
+.textHeader{
+	grid-column: 1/4;
+}
+.buttonHeader{
+	grid-column: 4/5;
+	margin: 25px 20px;
+}
+}
